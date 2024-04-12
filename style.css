@@ -1,3 +1,9 @@
+:root {
+ --green: #036039;
+ --yellow-gold: #F9C24A;
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -19,21 +25,95 @@
     justify-content: space-between;
 
 }
+.logo-container {
+    margin: 5px;
+}
 .logo {
     height: 100px;
     width: auto;
     display: block;
 }
-
 .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .navbar a {
     display: flex;
     padding: 0 1.25rem;
-    color: #036039;
-    font-weight: 700;
+    color: #000;
+    font-weight: 300;
     font-size: 1rem;
 }
+.navbar a:hover {
+    color: #036039;
+    transition: all 0.3s ease;
+}
+.dropdown {
+    overflow: hidden;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+.dropdown-content a {
+    color: black;
+    text-align: left;
+    padding: 10px 20px;
+    display: block;
+    width: auto;
+}
+.dropdown-content a:hover {
+    background-color: var(--green);
+    color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;   
+}
+
+.menu-bar {
+    display: none;
+    background-color: #036039;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1280px) {
+    .menu-bar {
+        display: block;
+    }
+
+    .navbar a {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .menu-bar {
+        display: block;
+    }
+
+    .navbar a {
+        display: none;
+    }
+    .logo {
+        left: 20;
+        height: 70px;
+    }
+}
+
+
+
+
+
