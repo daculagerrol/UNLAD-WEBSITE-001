@@ -1,0 +1,13 @@
+.member-container {
+    display: flex;
+}
+.text-container {
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    top: 100;
+    color: var(--green)
+}
