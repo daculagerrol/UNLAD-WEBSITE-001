@@ -1,4 +1,8 @@
-function toggleMenu() {
-    var nav = document.querySelector('nav');
-    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+}
+function closeSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
 }
