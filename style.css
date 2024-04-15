@@ -168,6 +168,9 @@ body {
     .logo {
         height: 80px;
     }
+    .sidebar {
+        width: 100%;
+    }
 }
 
 
